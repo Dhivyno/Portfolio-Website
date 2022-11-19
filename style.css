@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 40, 0.7)), url(Images/background-colour3.png);
+    background-size: 35% 100%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    word-wrap: normal;
+}
+nav{
+    display: flex;
+    padding: 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:150px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+}
+.nav-links ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.nav-links ul li a:hover{
+    color: pink;
+    font-size: 40px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    background: #F44336
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.text-box p{
+    margin: 10px 0 40px; 
+    font-size: 20px;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.hero-btn:hover{
+    border: 2px solid red;
+    background: #f44336;
+    transition: 0.7s;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        color: #FFF;
+        display: block;
+    }
+    .nav-links ul li a{
+        color: #FFF;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .nav-links{
+        position: absolute;
+        background: #FF2400;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 10;
+        transition: 1.5s;
+    }
+    nav .fa{
+        display: block;
+        color: #FFF;
+        margin: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #FFF;
+        margin: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*--- About me ---*/
+
+.AboutMe image{
+    align-self: left;
+    width: 200px;
+    transform: translateX(-700px);
+    transform: translateY(200px);
+}
+.AboutMe {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 40, 0.7)), url(Images/background-colour3.png);
+    background-blend-mode: normal;
+    background-size: cover;
+    text-align: right;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 50px;
+    align-items: left;
+    justify-content: center;
+    padding-left: 0px;
+    word-wrap: normal;
+}
+.AboutMe h1 {
+    font-size: 36px;
+    color: #FE7D6A;
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 0px;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 110px;
+    font-family: 'Cera Round Pro', sans-serif;
+    word-wrap: normal;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    transform: translate(200px, 100px);
+}
+
+.AboutMe p {
+    align-self: right;
+    transform: translate(650px, -120px);
+    color: #c0caf5;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 0px;
+    line-height: 200%;
+    padding-right: 100px;
+    font-family: 'Cera Round Pro', sans-serif;
+    height: 600px;
+}
+.AboutMe.active::after p{
+    content: "Hi! My name is Dhivyesh. I am currently a Year 13 student at Garden International School studying A-levels"
+}
+.revealTranslate{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealTranslate.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealTranslateFromRight{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.revealTranslateFromRight.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.imgrevealTranslate{
+    position: relative;
+    transform: translate(100px, 200px);
+    opacity: 0;
+    transition: 1s all ease;
+    transition-delay: 0.7s;
+}
+.imgrevealTranslate.active{
+    transform: translate(100px, 100px);
+    opacity: 1;
+}
+.revealTranslateFromLeft{
+    position: relative;
+    transform: translateX(250px);
+    opacity: 0;
+    width: 50%;
+    transition: 1s all ease;
+}
+.revealTranslateFromLeft.active{
+    transform: translateX(350px);
+    opacity: 1
+}
+.revealScramble{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 1;
+    transition: 1s all ease;
+}
+  
+.revealScramble.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.text.active{
+    font-size: 30px;
+}
+.welcomeMessage{
+    width: 100%;
+    color: #c0caf5;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: 'Cera Round Pro', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(150px);
+    transition: 0.4s;
+}
+.welcomeMessage p{
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.welcomeMessage.active{
+    font-size: 0;
+    margin: 0 0 0;
+    opacity: 0;
+}
+#bootstrap{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1250px, -400px);
+}
+#Csharp{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1230px, -400px);
+}
+.pink {
+    color: #f7768e;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.red {
+    color: #f44336;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.blue {
+    color: #7aa2f7;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.yellow {
+    color: #e0af68;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.purple {
+    color: #bb9af7;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.orange {
+    color: #ed7014;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.green {
+    color: #9ece6a;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.teal {
+    color: #73daca;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.grey {
+    color: #9aa5ce;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.cyan {
+    color: #7dcfff;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+  
+.white {
+    color: #f0f0f0;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.orange{
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.autotype {
+    font-size: 30px;
+}
+.name {
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    25% { color: #7dcfff; }
+    50% { color: #bb9af7; }
+    75% { color: #ed7014 }
+    100% { color: red; }
+  }

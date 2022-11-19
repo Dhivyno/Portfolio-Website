@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text scramble effect</title>
+    <style>
+    
+     @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #212121;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+  <div class="text"></div>
+</div> 
+<script src="scramble.js"></script>
+<script>
+    
+    
+const phrases = ['Hola,', 'Beautiful there', 'you\'re loving ones for other', 'just as I am', 'that there\'s a connection', 'between you and other', 'keep enjoying :)'];
+const el = document.querySelector('.text');
+const fx = new TextScramble(el);
+let counter = 0;
+
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 800);
+  });
+  counter = (counter + 1) % phrases.length;
+};
+
+next();
+    </script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="http://fonts.cdnfonts.com/css/cera-round-pro" rel="stylesheet">
+        <style>
+            @import url('http://fonts.cdnfonts.com/css/cera-round-pro');
+    </style>
+        <meta charset="UTF-8">
+    <title>Dhivyesh Kanagasabai</title>
+    <style>
+    
+     @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #0000FF;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+.text {
+  font-weight: 500;
+  font-size: 100px;
+  font-family: 'Cera Round Pro', sans-serif;
+  color: #FFFFFF;
+  transition: 1s;
+}
+.dud {
+  color: #757575;
+}
+
+
+    </style>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Dhivyesh Kanagasabai</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3daf552b75.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	</head>
+    
+<body>
+    
+<section class = "header">
+    <nav>
+        <a href = "index.html"><img src="images/gojoPic.png"></a>
+        <div class="nav-links" id = "navLinks">
+            <i class="fa-solid fa-xmark" onclick = "hideMenu()"></i>
+            <ul>
+                <li>
+                    <div class ="item">
+                        <div id = "highlight"></div>  <!--------- Add a highlight animation -------->
+                        <a class = "Home white" href = "">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class ="item">
+                        <div id = "highlight"></div>   <!--------- Add a highlight animation -------->
+                        <a class = "About white" href = "">About Me</a>
+                    </div>
+                </li>
+                <li>
+                    <div class ="item">
+                        <div id = "highlight"></div>   <!--------- Add a highlight animation -------->
+                        <a class = "Projects white" href = "#AboutMe">My Projects</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick = "showMenu()"></i>
+    </nav>
+    <div class="container revealScramble">
+        <div class="text teal"></div>
+        <script src="scramble.js"></script>
+      <script>
+        const phrases = ['Hi there!', 'Hola!', 'Bonjour!', 'Guten Tag!', 'Ciao!', 'こんにちは!', '你好!'];
+        const el = document.querySelector('.text');
+        const fx = new TextScramble(el);
+        let counter = 0;
+      
+        const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+          setTimeout(next, 1000);
+        });
+        counter = (counter + 1) % phrases.length;
+      };
+      
+      next();
+        </script>
+      </div>
+      <div class = "welcomeMessage">
+        <p>Thank you for visiting my website :) (Scroll down for more)</p>
+      </div>
+<div class="text-box revealTranslate">
+    <h1>I'm <span class="name purple">Dhivyesh Kanagasabai</span></h1>
+    <p><span class="autotype cyan"></span><br>working on many projects in my free time.</p>
+    <a href="https://github.com/Dhivyno" target = "_blank" class = "hero-btn">Visit my GitHub to find out more</a>
+</div>
+</section>
+
+<!----About me ----->
+<section class = "AboutMe"> 
+    <div class="aboutme revealTranslateFromRight">
+    <h1> 
+        Who Am I?
+    </h1>
+    </div>
+    <div class="image imgrevealTranslate">
+    <a href = "index.html"><img src="images/animeProgramming.gif"></a>
+    </div>
+    <div class="aboutme">
+    <p>
+        <span class="delay1 revealTranslateFromLeft">Hi! My name is Dhivyesh. I am currently a Year 12 student at Garden International School</span>
+        <span class = "delay2 revealTranslateFromLeft">studying A-levels. I chose Further maths, Physics and Chemistry as my AS level subjects as</span>
+        <span class="delay3 revealTranslateFromLeft">I am keen in problem solving and finding answers to simple and often ignored questions.</span>
+        <span class="delay4 revealTranslateFromLeft">Although I do not take computer science, I have found that my passions lie in programming</span>
+        <span class="delay5 revealTranslateFromLeft">and building useful programs.<br><br></span>
+        <span class="delay6 revealTranslateFromLeft">This website, for example, is a testament to my creative and project based learning skills.</span>
+        <span class="delay7 revealTranslateFromLeft">The finished product, after many hours of grueling and seemingly directionless debugging,</span>
+        <span class="delay8 revealTranslateFromLeft">gives my work meaning and motivates me to push through and succeed.</span>
+    </p> <!-------- add a part where the user scrolls down and then when they scroll back up it 
+        asks, "wait youre still here" but then switches back to the hello screen after saying "wait, forget you saw that"-->
+    <div class="deviconSymbols">
+        <img id = "bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+        <img id = "Csharp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+    </div>
+    </div>
+</section>
+
+
+<!------ JS for text transitions------>
+<script>
+    function changeYear() {
+        var changes = document.querySelectorAll(".AboutMe");
+        time = new Date();
+        month = time.getMonth();
+        year = time.getFullYear();
+        if (year == 2023 && month > 6)
+            for (var i = 0; i < reveals.length; i++) {
+                changes[i].classList.add("active");
+            }
+    }
+    window.addEventListener("scroll", changeYear);
+</script>
+<script>
+    function changeNameColor() {
+        colors: ["purple", "teal", "red", "yellow", "orange", "pink"]
+        var changes = document.querySelectorAll(".name");
+        var existent = changes[0].classList[1];
+        changes[0].classList.replace("existent", colors[4]);
+    }
+    window.addEventListener("scroll", changeNameColor)
+</script>
+
+<script> 
+    function reveal() {
+    var reveals = document.querySelectorAll(".revealTranslate");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+    moveScramble()
+    }
+
+    window.addEventListener("scroll", reveal);
+</script>
+<script> 
+    function imgreveal() {
+    var reveals = document.querySelectorAll(".imgrevealTranslate");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+    }
+
+    window.addEventListener("scroll", imgreveal);
+</script>
+<script>
+    function revealFromRight() {
+        var revealsFromRight = document.querySelectorAll(".revealTranslateFromRight");
+        for (var i = 0; i < revealsFromRight.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealsFromRight[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        revealsFromRight[i].classList.add("active");
+        } else {
+        revealsFromRight[i].classList.remove("active");
+        }
+    }
+    }
+    window.addEventListener("scroll", revealFromRight);
+</script>
+<script>
+    function revealFromLeft() {
+        var revealsFromLeft = document.querySelectorAll(".revealTranslateFromLeft");
+        for (var i = 0; i < revealsFromLeft.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealsFromLeft[i].getBoundingClientRect().top;
+        var elementVisible = 300;
+
+        if (elementTop < windowHeight - elementVisible) {
+        revealsFromLeft[i].classList.add("active");
+        } else {
+        revealsFromLeft[i].classList.remove("active");
+        }
+    }
+    }
+    window.addEventListener("scroll", revealFromLeft);
+</script>
+<script> 
+    function moveScramble() {
+    var reveals = document.querySelectorAll(".revealScramble");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+    var reveals = document.querySelectorAll(".text");
+    for (var i = 0; i < reveals.length; i++) {
+        reveals[i].classList.add("active");
+    }
+    var reveals = document.querySelectorAll(".welcomeMessage");
+    for (var i = 0; i < reveals.length; i++) {
+        reveals[i].classList.add("active");
+    }
+    }
+</script>
+<script>
+    var typed = new Typed(".autotype", {
+        strings: ["A Student", "A Programmer", "A Volunteer"],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true
+    })
+</script>
+<!------ JS for opening and closing menu ------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function refreshGrade() {
+        const Date = new Date()
+        const year = Date.getFullYear()
+        const month = Date.getMonth()
+        const day = Date.getDate()
+        let grade = year - 2010
+        if (month < 7) {
+            grade--
+        }
+        return grade
+    }
+    document.getElementById("grade/year").innerHTML = refreshGrade()
+    function refreshAge() {
+        const Date = new Date()
+        const year = Date.getFullYear()
+        const month = Date.getMonth()
+        const day = Date.getDate()
+        let age = year - 2005
+        if (month < 9 || month == 9 && day < 26) 
+        {
+            age--
+        }
+    }
+</script>
+</body>
+	
+</html>
