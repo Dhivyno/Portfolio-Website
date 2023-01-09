@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cera Round Pro', sans-serif;
+}
+@font-face {
+    font-family: "testing";
+    src: url(FontsFree-Net-Cera-Round-Pro2.ttf);
 }
 .header{
     min-height: 100vh;
@@ -12,6 +16,16 @@
     position: relative;
     overflow: hidden;
     word-wrap: normal;
+}
+.gradient-text {
+  background-color: red;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 nav{
     display: flex;
@@ -38,11 +52,18 @@ nav img{
     font-size: 30px;
     text-decoration: none;
     transition: 0.5s;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .nav-links ul li a:hover{
     color: pink;
     font-size: 40px;
+  background-image: linear-gradient(45deg, #f1c76b, #706ee9);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .nav-links ul li::after{
     content: "";
@@ -55,7 +76,7 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
-    background: #F44336
+    background: linear-gradient(45deg, #f3ec78, #af4261);
 }
 .text-box{
     width: 90%;
@@ -68,24 +89,24 @@ nav img{
 }
 .text-box h1{
     font-size: 62px;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .text-box p{
     margin: 10px 0 40px; 
     font-size: 20px;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;                                              
 }
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
     border: 2px solid #fff;
     padding: 12px 34px;
     font-size: 16px;
     background: transparent;
     position: relative;
     cursor: pointer;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .hero-btn:hover{
     border: 2px solid red;
@@ -175,7 +196,7 @@ nav .fa{
     justify-content: center;
     text-align: center;
     padding-right: 110px;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
     word-wrap: normal;
 }
 
@@ -197,7 +218,7 @@ nav .fa{
     padding: 0px;
     line-height: 200%;
     padding-right: 100px;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
     height: 600px;
 }
 .AboutMe.active::after p{
@@ -266,7 +287,7 @@ nav .fa{
     font-size: 25px;
     font-weight: 600;
     line-height: 22px;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -274,7 +295,7 @@ nav .fa{
     transition: 0.4s;
 }
 .welcomeMessage p{
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .welcomeMessage.active{
     font-size: 0;
@@ -285,69 +306,117 @@ nav .fa{
     width: 100px;
     height: 100px;
     justify-content: center;
-    transform: translate(-1250px, -400px);
+    transform: translate(-400px, -375px);
 }
-#Csharp{
+#csharp{
     width: 100px;
     height: 100px;
     justify-content: center;
-    transform: translate(-1230px, -400px);
+    transform: translate(-380px, -375px);
+}
+#python{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-360px, -375px);
+}
+#cplusplus{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-340px, -375px);
+}
+#css3{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-320px, -375px);
+}
+#html5{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1280px, -200px);
+}
+#javascript{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1280px, -200px);
+}
+#swift{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1280px, -200px);
+}
+#java{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1280px, -200px);
+}
+#jupyter{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    transform: translate(-1280px, -200px);
 }
 .pink {
     color: #f7768e;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .red {
     color: #f44336;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .blue {
     color: #7aa2f7;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .yellow {
     color: #e0af68;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .purple {
     color: #bb9af7;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .orange {
     color: #ed7014;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .green {
     color: #9ece6a;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .teal {
     color: #73daca;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .grey {
     color: #9aa5ce;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .cyan {
     color: #7dcfff;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
   
 .white {
     color: #f0f0f0;
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .orange{
-    font-family: 'Cera Round Pro', sans-serif;
+    font-family: 'testing', sans-serif;
 }
 .autotype {
     font-size: 30px;
@@ -357,9 +426,9 @@ nav .fa{
   }
   
   @keyframes color-change {
-    0% { color: red; }
-    25% { color: #7dcfff; }
-    50% { color: #bb9af7; }
-    75% { color: #ed7014 }
-    100% { color: red; }
+    0% { color: linear-gradient(45deg, #f3ec78, #af4261); }
+    25% { color: linear-gradient(45deg, #af4261, #f3ec78); }
+    50% { color: linear-gradient(45deg, #f3ec78, #af4261); }
+    75% { color: linear-gradient(45deg, #f3ec78, #af4261); }
+    100% { color: linear-gradient(45deg, #f3ec78, #af4261); }
   }
